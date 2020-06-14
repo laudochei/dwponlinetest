@@ -15,5 +15,5 @@ import java.util.List;
 public interface PeopleService {
     List<People> findAll();
     List<People> findByCity(String cityname);
-    List<People> findNearLocation(double latitude,  double longitude, double distance, String unit);
+    List<People> findNearLocation(double distance, String unit);
 }

@@ -16,9 +16,6 @@ import org.springframework.stereotype.Repository;
  * @author Laud.Ochei
  */
 
-
-
-
 @Repository
 public class MessageDaoImpl implements MessageDao {
 	NamedParameterJdbcTemplate namedParameterJdbcTemplate;

@@ -16,8 +16,6 @@ import org.springframework.stereotype.Service;
  * @author laud.c.ochei
  */
 
-
-
 @Service("peopleService")
 public class PeopleServiceImpl implements PeopleService {
 	PeopleDao peopleDao;
@@ -40,8 +38,8 @@ public class PeopleServiceImpl implements PeopleService {
         
         
         @Override
-	public List<People> findNearLocation(double latitude,  double longitude, double distance, String unit) {
-            return peopleDao.findNearLocation(latitude, longitude, distance, unit);
+	public List<People> findNearLocation(double distance, String unit) {
+            return peopleDao.findNearLocation(distance, unit);
 	}
 }
 

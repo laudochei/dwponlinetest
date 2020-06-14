@@ -10,18 +10,10 @@ import java.util.List;
 
 /**
  *
- * @author Me
+ * @author Laud.Ochei
  */
 public interface PeopleDao {
-    //People findByNo(Integer peopleid);
     List<People> findAll();
     List<People> findByCity(String cityname);
-    List<People> findNearLocation(double latitude,  double longitude, double distance, String unit);
-    
-    //void savePeople(People people);
-    //void updatePeople(People people);
-    //void deletePeople(Integer peopleid);
-    //int peopleIDExists(Integer peopleid);
-    //int peopleNameExists(String name);
-    
+    List<People> findNearLocation(double distance, String unit);
 }
