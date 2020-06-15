@@ -70,7 +70,6 @@ public class PeopleController {
             List<People> peoplewithin = peopleService.findNearLocation(distancelimitinmiles, "M");
             
             // combine the two list and exclude duplicates 
-            List<People> peoplelist = new ArrayList<People>();
             for (int i = 0; i<peoplewithin.size(); i++){
                 if(!peoplein.contains(peoplewithin.get(i)))
                     peoplein.add(peoplewithin.get(i));
@@ -81,6 +80,7 @@ public class PeopleController {
             }
             return peoplein;
         }
+        
         
         
         
